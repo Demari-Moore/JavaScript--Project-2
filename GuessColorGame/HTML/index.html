@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Color</title>
+    <script src="https://kit.fontawesome.com/4989c3a663.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Score:</h2>
+        <h2 id="score"></h2>
+        <hr id="score-Line" class="hide">
+
+        <h1>Guess which box has </h1>
+        <h1>The color:</h1>
+        <h1><i class="fas fa-hand-point-down"></i> </h1>
+        <h1 id="color-text"></h1>
+        <h1 id="color"></h1>
+
+        <h1> <i id="arrow-play" class="fas fa-hand-point-down hide"></i></h1>
+        <div onclick="checkGameResult('left')" id="left-square"></div>
+        <div onclick="checkGameResult('right')" id="right-square"></div>
+
+        <button onclick="startGame()" id="button">RESET</button>
+        <h1 id="result"></h1>
+
+        <p>D. Moore</p>
+    </div>
+    <script type="text/javascript" src="../JS/startGame.js"></script>
+</body>
+
+</html>

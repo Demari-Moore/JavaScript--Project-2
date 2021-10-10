@@ -1,0 +1,171 @@
+#score {
+    margin-top: 100px;
+    padding: 15px;
+    text-align: justify;
+    align-items: center;
+    width: 270px;
+    height: 200px;
+    font-size: 2.2rem;
+    border: black solid;
+    position: fixed;
+    color: seashell;
+    font-weight: bolder;
+}
+
+hr {
+    width: 45px;
+    height: 2px;
+    position: fixed;
+    margin-top: 155px;
+    margin-left: 250px;
+    background-color: seashell;
+}
+
+.container {
+    border: black solid;
+    padding: 30px;
+    background-color: rgb(179, 199, 199);
+    background-image: url("../IMAGES/board.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    z-index: -500px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 5rem;
+    color: seashell;
+}
+
+h2 {
+    width: 300px;
+    font-size: 3rem;
+    font-weight: 5rem;
+    position: fixed;
+    border: black solid;
+    color: seashell;
+}
+
+#result {
+    color: blue;
+    z-index: 900px;
+    width: 100%;
+    position: fixed;
+    margin-left: -3%;
+    margin-top: -700px;
+    animation-name: result;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#arrow-play {
+    z-index: 900px;
+    width: 100%;
+    position: fixed;
+    margin-left: -50%;
+    margin-top: 200px;
+    animation-name: result;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes result {
+    0% {
+        font-size: 6rem;
+    }
+    25% {
+        font-size: 9rem;
+    }
+    50% {
+        font-size: 9rem;
+    }
+    75% {
+        color: grey;
+    }
+    80% {
+        color: black;
+    }
+    85% {
+        color: black;
+    }
+    90% {
+        color: black;
+    }
+    95% {
+        color: grey;
+    }
+    100% {
+        color: grey;
+    }
+}
+
+#color,
+#color-text {
+    height: 70px;
+    border-radius: 100% 100% 100% 100%;
+    margin: 0 300px;
+    animation-name: targetColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes targetColor {
+    25% {
+        transform: scale(.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(.5);
+    }
+}
+
+#left-square {
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin-left: 400px;
+    margin-top: 20px;
+    background-image: url("../IMAGES/question-mark.jpg");
+    background-size: 250px;
+}
+
+#right-square {
+    float: right;
+    height: 300px;
+    width: 300px;
+    margin-right: 400px;
+    margin-top: 20px;
+    background-image: url("../IMAGES/question-mark.jpg");
+    background-size: 250px;
+}
+
+.hide {
+    display: none;
+}
+
+#button {
+    width: 200px;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 3rem;
+    margin-left: 42%;
+    background-color: grey;
+    color: seashell;
+    border: black solid;
+}
+
+p {
+    color: black;
+    font-size: 1.5rem;
+    position: fixed;
+    margin-top: -50px;
+    margin-left: 1200px;
+    font-family: fantasy;
+}
